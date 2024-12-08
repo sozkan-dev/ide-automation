@@ -39,7 +39,6 @@ public class Hooks {
     @AfterStep
     public void addScreenshot(Scenario scenario) {
 
-        // this is for cucumber junit report
         if (scenario.isFailed()) {
 
             TakesScreenshot ts = (TakesScreenshot) driver;
